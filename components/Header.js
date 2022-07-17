@@ -6,9 +6,13 @@ const Header = () => {
         <header class="text-gray-400 bg-transparent body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
-                <a class="flex title-font font-medium items-center text-black mb-4 md:mb-0 " href="../pages/index.tsx">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0 " href="../pages/index.tsx">
 
-                    <img src="public/earth.png" alt="..." class="shadow-lg rounded max-w-full h-auto align-middle border-none" />
+                    <Image src="/earth.png" alt="..."
+                        width='50' height='40'
+                        objectFit='contain'
+                        class="ml-3 rounded align-center" />
+
 
                     <span class="ml-3 text-xl">MY WORLD</span>
 
