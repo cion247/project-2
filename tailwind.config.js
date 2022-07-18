@@ -6,11 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/public/field.jpg')",
-        'footer-texture': "url('/public/field.jpg')",
-      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
 }

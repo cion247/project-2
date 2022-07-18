@@ -7,7 +7,7 @@ import BackGround from '../components/BackGround'
 
 const Home: NextPage = () => {
   return (
-    <div className="min-h-screen bg-[url('../public/field.jpg')] h-full w-full bg-no-repeat bg-cover "  >
+    <div className="min-h-screen bg-[url('../public/field2.jpg')] h-full w-full bg-no-repeat bg-cover bg-fixed"  >
       <Head>
         <title>My World</title>
         <link rel="icon" href="/favicon/favicon.ico" />
