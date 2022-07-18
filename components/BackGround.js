@@ -29,7 +29,7 @@ const BackGround = () => {
                     </div>
                 </div>
                 <div class="my-5">
-                    <Image objectFit='contain' width='3530' height='3450' alt="..." src="/Creativity, Inc. cover-1.png" />
+                    <Image objectFit='contain' width='630' height='550' alt="..." src="/Creativity, Inc. cover-1.png" />
                 </div>
 
 
@@ -41,7 +41,7 @@ const BackGround = () => {
 
 
 
-                    <iframe width="934" height="525" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="coffee shop radio // 24/7 lofi hip-hop beats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="934" height="525" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="coffee shop radio // 24/7 lofi hip-hop beats" alt="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
