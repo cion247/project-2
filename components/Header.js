@@ -1,51 +1,40 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header class="  bg-transparent text-gray-400 body-font">
+        <header class="  bg-transparent text-white body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
-                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0 " href="/index.tsx">
+                <Link href="/"><a class="flex title-font font-medium items-center  mb-4 md:mb-0 " href="/">
 
-                    <Image src="/earth.png" alt="..." width='50' height='40' objectFit='contain'
-                        class="ml-3 rounded align-center" />
+                    <Image src="/earth.png" alt="..." width='50' height='40' objectFit='contain' class="ml-3 rounded align-center" />
 
 
                     <span class="ml-3 text-xl">MY WORLD</span>
+                </a></Link>
 
-                </a>
-                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <nav class="md:ml-auto flex flex-wrap items-center justify-center  text-lg ">
 
-                    <a href="/about.tsx" target="_blank" rel="noopener noreferrer"
-                        class=" mx-3 px-3 text-whie no-underline bg-green-900 rounded hover:text-white
-                        hover:bg-transparent  text-lg">Room 1
-                    </a>
-                    <a href="/about.tsx" target="_blank" rel="noopener noreferrer"
-                        class=" mx-3 px-3 text-whie no-underline bg-green-900 rounded hover:text-white
-                        hover:bg-transparent  text-lg">Room 2
-                    </a>
+                    <Link href="/room1"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 bg-green-900 rounded 
+                        hover:bg-transparent ">Room 1
+                    </a></Link>
 
-                    <a href="/about.tsx" target="_blank" rel="noopener noreferrer"
-                        class=" mx-3 px-3  no-underline bg-rgb(22, 34, 30) rounded hover:bg-green-900 hover:text-white text-lg">Room 3
-                    </a>
-                    <a href="/about.tsx" target="_blank" rel="noopener noreferrer"
-                        class=" mx-3 px-3  no-underline bg-rgb(22, 34, 30) rounded hover:bg-green-900 hover:text-white text-lg">Room 4
-                    </a>
+                    <Link href="/room2"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 bg-green-900 rounded 
+                        hover:bg-transparent ">Room 2
+                    </a></Link>
 
+                    <Link href="/room3"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 rounded bg-green-900  hover:bg-transparent">Room 3
+                    </a></Link>
 
-
-
-
-
-
-
+                    <Link href="/room4"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 rounded bg-green-900  hover:bg-transparent">Room 4
+                    </a></Link>
 
                 </nav>
-
             </div>
+
         </header >
     )
 }
-
 export default Header
