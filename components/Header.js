@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header class="  bg-transparent text-white body-font">
-            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <header class="  bg-transparent text-white body-font text-shadow-xl ">
+            <div class="container mx-auto flex flex-wrap p-5 flex-column md:flex-row items-center fixed ">
 
                 <Link href="/"><a class="flex title-font font-medium items-center  mb-4 md:mb-0 " href="/">
 
@@ -15,7 +15,7 @@ const Header = () => {
                     <span class="ml-3 text-xl">MY WORLD</span>
                 </a></Link>
 
-                <nav class="md:ml-auto flex flex-wrap items-center justify-center  text-lg ">
+                <nav class="md:ml-auto  flex flex-wrap items-center justify-center  text-lg ">
 
                     <Link href="/room1"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 bg-green-900 rounded 
                         hover:bg-transparent ">Room 1
