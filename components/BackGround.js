@@ -15,7 +15,7 @@ const BackGround = () => {
     }
     return (
         <section class="text-white text-shadow-xl bg-transparent body-font justify-center">
-            <div class="container mx-auto pt-36 flex px-5 pb-12 items-center justify-center ">
+            <div class="container mx-auto pt-40 flex px-5 pb-12 items-center justify-center ">
                 {/*<div class="flex flex-wrap  md:-m-2 m-1 justify-center">
                     <div class=" p-1 w-1/2 md:w-3/4 2xl:w-full justify-center">
                         <img alt="gallery" class="w-full h-full object-cover object-center block" src="/imagePr2.png" />
@@ -30,7 +30,7 @@ const BackGround = () => {
             </div>
 
             <div class="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center
-            min-h-min bg-[url('../public/pexels-aleksandar-pasaric-2603464-2.jpg')] rounded-3xl h-1/2 w-full bg-no-repeat bg-cover bg-fixed lg:flex-grow">
+            min-h-min bg-[url('../public/pexels-aleksandar-pasaric-2603464.jpg')] rounded-3xl h-1/2 w-full bg-no-repeat bg-cover bg-fixed lg:flex-grow">
                 <div class=" flex flex-col md:pr-16  md:w-3/4 items-start md:text-left mb-16 md:mb-0 lg:pr-24 lg:flex-grow   text-start xl:w-full">
 
 
