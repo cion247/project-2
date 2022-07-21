@@ -18,17 +18,17 @@ const Header = () => {
                 <nav class="md:ml-auto  flex flex-wrap items-center justify-center  text-lg ">
 
                     <Link href="/room1"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 bg-green-900 rounded 
-                        hover:bg-transparent ">Room 1
+                        hover:bg-green-700 ">Room 1
                     </a></Link>
 
                     <Link href="/room2"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 bg-green-900 rounded 
-                        hover:bg-transparent ">Room 2
+                        hover:bg-green-700 ">Room 2
                     </a></Link>
 
-                    <Link href="/room3"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 rounded bg-green-900  hover:bg-transparent">Room 3
+                    <Link href="/room3"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 rounded bg-green-900  hover:bg-green-700">Room 3
                     </a></Link>
 
-                    <Link href="/room4"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 rounded bg-green-900  hover:bg-transparent">Room 4
+                    <Link href="/room4"><a target="_blank" rel="noopener noreferrer" class=" mx-3 px-3 pb-1 rounded bg-green-900  hover:bg-green-700">Room 4
                     </a></Link>
 
                 </nav>

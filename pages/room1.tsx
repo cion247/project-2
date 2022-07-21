@@ -10,7 +10,7 @@ const Room1: NextPage = () => {
       <div className=" h-full w-full  fixed ">
         <Image src="/pexels-satoshi-hirayama-2070028.jpg" layout="fill"
           objectFit="cover" objectPosition="top" width={6192} height={4128} blurDataURL="data:..." priority
-          placeholder="blur" quality={40} >
+          placeholder="blur"  >
 
         </Image>
       </div>
