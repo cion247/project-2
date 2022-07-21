@@ -9,16 +9,16 @@ const Home: NextPage = () => {
   return (
     // bg-[url('../public/field2.jpg')]  bg-no-repeat bg-cover bg-fixed bg-center
     <section>
-      {/* <div className=" h-full w-full  fixed ">
+      <div className=" h-full w-full  fixed ">
         <Image src="/field2.jpg" layout="fill"
           objectFit="cover" objectPosition="center" width={4053} height={2280} blurDataURL="data:..." placeholder="blur" priority
         >
 
         </Image>
-      </div>absolute */}
+      </div>
+      {/* bg-gradient-to-tl from-violet-900 via-emerald-900 to-green-800 */}
 
-
-      <div className="min-h-screen h-full w-full bg-gradient-to-tl from-violet-900 via-emerald-900 to-green-800 bg-fixed"  >
+      <div className="absolute min-h-screen h-full w-full bg-transparent bg-fixed"  >
         <Head>
           <title>My World</title>
           <link rel="icon" href="/favicon/favicon.ico" />
