@@ -2,20 +2,32 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 const Room3: NextPage = () => {
   return (
-    <div className="min-h-screen bg-[url('../public/pexels-harrison-candlin-2441454.jpg')] h-full w-full bg-no-repeat bg-cover bg-fixed bg-center"  >
-      <Head>
-        <title>Room 3</title>
-        <link rel="icon" href="/favicon/favicon.ico" />
-      </Head>
-      <Header />
+    <section>
+      <div className=" h-full w-full  fixed ">
+        <Image src="/pexels-harrison-candlin-2441454.jpg" layout="fill"
+          objectFit="cover" objectPosition="top" width={3403} height={2272} >
 
-      <Footer />
-    </div>
+        </Image>
+      </div>
+      <div className="absolute min-h-screen h-full w-full"  >
+        <Head>
+          <title>Room 3</title>
+          <link rel="icon" href="/favicon/favicon.ico" />
+        </Head>
+        <Header />
+
+        <Footer />
+      </div>
+    </section>
+
 
   )
 }
 
 export default Room3
+
+

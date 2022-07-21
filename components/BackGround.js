@@ -45,12 +45,14 @@ const BackGround = () => {
                             class="py-1 px-5 text-white no-underline bg-blue-500 rounded hover:bg-blue-600 hover:text-blue-200 text-lg">Read</a>
                     </div>
                 </div>
+
                 <div class=" p-1 w-2/6  xl:w-1/4 ">
                     <img alt="gallery" class=" object-contain object-center block" src="/Creativity, Inc. cover-1.png" />
                 </div>
 
             </div>
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+
+            <div class="container mx-auto bg-transparent flex px-5 py-24 md:flex-row flex-col items-center">
                 <iframe className=" w-full aspect-video" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="coffee shop radio // 24/7 lofi hip-hop beats" alt="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
