@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </div> */}
       {/* absolute */}
 
-      <div className=" min-h-screen h-full w-full bg-gradient-to-tl from-violet-900 via-emerald-900 to-green-800 bg-fixed"  >
+      <div className=" min-h-screen h-full w-full bg-gradient-to-tl from-violet-900 via-emerald-900 to-cyan-900 bg-fixed"  >
         <Head>
           <title>My World</title>
           <link rel="icon" href="/favicon/favicon.ico" />
