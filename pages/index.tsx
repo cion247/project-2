@@ -11,7 +11,8 @@ const Home: NextPage = () => {
     <section>
       <div className=" h-full w-full  fixed ">
         <Image src="/field.jpg" layout="fill"
-          objectFit="cover" objectPosition="top" width={4053} height={2867} >
+          objectFit="cover" objectPosition="top" width={4053} height={2867} blurDataURL="data:..." priority
+          placeholder="blur" quality={40}>
 
         </Image>
       </div>
