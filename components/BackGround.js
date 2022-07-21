@@ -3,12 +3,15 @@ import Image from 'next/image'
 
 
 const BackGround = () => {
-    const [count, setCount] = useState('visible');
+    const [count, setCount] = useState('hidden');
+    const [text, setText] = useState('show more..')
     function toggle() {
-        if (count == 'visible') setCount('invisible');
-        else setCount('visible');
-
-
+        if (count == 'hidden') {
+            setCount(' '); setText('show less..');
+        }
+        else {
+            setCount('hidden'); setText('show more..');
+        }
     }
     return (
         <section class="text-white text-shadow-xl bg-transparent body-font justify-center">
@@ -35,14 +38,14 @@ const BackGround = () => {
                         <br class="hidden lg:inline-block" />Current recommendation:
                     </h1>
                     <p class="mb-8 leading-relaxed text-md  ">
-                        From a co-founder of Pixar Animation Studios—comes an incisive book about creativity in business and leadership. NEW YORK TIMES BESTSELLER. It is, at heart, a book about creativity—but it is also, as Pixar co-founder and president Ed Catmull writes, “an expression of the ideas that I believe make the best in us possible.” <span class={count}>As a young man, Ed Catmull had a dream: to make the first computer-animated movie. Nine years later, Toy Story was released, changing animation forever. The essential ingredient in that movie s success—and in the thirteen movies that followed—was the unique environment that Catmull and his colleagues built at Pixar. • If you dont strive to uncover what is unseen and understand its nature, you will be ill prepared to lead. • Its not the managers job to prevent risks. Its the managers job to make it safe for others to take them. • The cost of preventing errors is often far greater than the cost of fixing them.</span> <button onClick={toggle} class="mx-1 px-2 py-2 text-gray-400">read less...</button></p>
+                        From a co-founder of Pixar Animation Studios—comes an incisive book about creativity in business and leadership. NEW YORK TIMES BESTSELLER. It is, at heart, a book about creativity—but it is also, as Pixar co-founder and president Ed Catmull writes, “an expression of the ideas that I believe make the best in us possible.” <span class={count}>As a young man, Ed Catmull had a dream: to make the first computer-animated movie. Nine years later, Toy Story was released, changing animation forever. The essential ingredient in that movie s success—and in the thirteen movies that followed—was the unique environment that Catmull and his colleagues built at Pixar. • If you dont strive to uncover what is unseen and understand its nature, you will be ill prepared to lead. • Its not the managers job to prevent risks. Its the managers job to make it safe for others to take them. • The cost of preventing errors is often far greater than the cost of fixing them.</span> <button onClick={toggle} class="mx-1 px-2 py-2 text-gray-400">{text}</button></p>
 
                     <div class="flex  mx-10">
                         <a href="/Creativity, Inc. ( PDFDrive ).pdf" target="_blank" rel="noopener noreferrer"
                             class="py-1 px-5 text-white no-underline bg-blue-500 rounded hover:bg-blue-600 hover:text-blue-200 text-lg">Read</a>
                     </div>
                 </div>
-                <div class=" p-1 w-2/4 2xl:w-1/2 ">
+                <div class=" p-1 w-2/6  xl:w-1/4 ">
                     <img alt="gallery" class=" object-contain object-center block" src="/Creativity, Inc. cover-1.png" />
                 </div>
 
