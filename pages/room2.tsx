@@ -9,7 +9,7 @@ const Room2: NextPage = () => {
     <section>
       <div className=" h-full w-full  fixed ">
         <Image src="/pexels-riccardo-bertolo-4245826-2.jpg" layout="fill"
-          objectFit="cover" objectPosition="top" width={5184} height={2920} blurDataURL="data:..." priority
+          objectFit="cover" objectPosition="top" blurDataURL="data:..." priority
           placeholder="blur" quality={40} >
 
         </Image>

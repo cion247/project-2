@@ -14,7 +14,7 @@ const BackGround = () => {
         }
     }
     return (
-        <section class="text-white text-shadow-xl bg-transparent body-font justify-center">
+        <section class="text-white text-shadow-xl bg-transparent body-font justify-center ">
             <div class="container mx-auto pt-40 flex px-5 pb-12 items-center justify-center ">
                 {/*<div class="flex flex-wrap  md:-m-2 m-1 justify-center">
                     <div class=" p-1 w-1/2 md:w-3/4 2xl:w-full justify-center">

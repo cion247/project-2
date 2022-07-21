@@ -10,15 +10,13 @@ const Home: NextPage = () => {
     // bg-[url('../public/field2.jpg')]  bg-no-repeat bg-cover bg-fixed bg-center
     <section>
       <div className=" h-full w-full bg-gradient-to-tl from-violet-900 via-emerald-900 to-cyan-900 fixed ">
-        <Image src="/field.jpg" layout="fill"
-          objectFit="cover" objectPosition="center" width={1920} height={1080} priority
-        >
+        <Image src="/field3.jpg" layout="fill" objectFit="cover" objectPosition="center" priority className=''>
 
         </Image>
       </div>
       {/*  */}
 
-      <div className="absolute min-h-screen h-full w-full  bg-fixed"  >
+      <div className="absolute min-h-screen h-full w-full  bg-fixed "  >
         <Head>
           <title>My World</title>
           <link rel="icon" href="/favicon/favicon.ico" />
