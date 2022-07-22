@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     // bg-[url('../public/field2.jpg')]  bg-no-repeat bg-cover bg-fixed bg-center
     <section>
       <div className=" h-full w-full bg-gradient-to-tl from-violet-900 via-emerald-900 to-cyan-900 fixed ">
-        <Image src="/field1.jpg" layout="fill" objectFit="cover" objectPosition="center" priority />
+        <Image src="/stars.png" layout="fill" objectFit="cover" objectPosition="center" priority />
 
       </div>
       {/*  */}
