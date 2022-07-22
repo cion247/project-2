@@ -10,9 +10,9 @@ const Room3: NextPage = () => {
       <div className=" h-full w-full  fixed ">
         <Image src="/pexels-harrison-candlin-2441454-2.jpg" layout="fill"
           objectFit="cover" objectPosition="top" blurDataURL="data:..." priority
-          placeholder="blur" quality={40} >
+          placeholder="blur" />
 
-        </Image>
+
       </div>
       <div className="absolute min-h-screen h-full w-full"  >
         <Head>

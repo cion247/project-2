@@ -1,5 +1,3 @@
-
-
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
@@ -11,9 +9,8 @@ const Room4: NextPage = () => {
     <section>
       <div className=" h-full w-full  fixed ">
         <Image src="/pexels-björn-austmar-þórsson-7267852-2.jpg" layout="fill"
-          objectFit="cover" objectPosition="top" quality={40} >
+          objectFit="cover" objectPosition="top" />
 
-        </Image>
       </div>
       <div className="absolute min-h-screen h-full w-full"  >
         <Head>
