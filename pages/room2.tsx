@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import BgTwo from '../components/BgTwo'
 import Image from 'next/image'
 
 const Room2: NextPage = () => {
@@ -20,7 +21,9 @@ const Room2: NextPage = () => {
           <link rel="icon" href="/favicon/favicon.ico" />
         </Head>
         <Header />
-
+        
+        <BgTwo/>
+        
         <Footer />
       </div>
     </section>
