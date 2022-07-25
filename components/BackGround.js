@@ -46,7 +46,7 @@ const BackGround = () => {
             </div>
 
             <div class="container mx-auto bg-transparent flex px-5 py-24 md:flex-row flex-col items-center">
-                <iframe className=" w-full aspect-video" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="coffee shop radio // 24/7 lofi hip-hop beats" alt="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className=" w-full aspect-video" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="coffee shop radio // 24/7 lofi hip-hop beats" alt="YouTube video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                     <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium ">try listening to some

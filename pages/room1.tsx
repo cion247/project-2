@@ -8,20 +8,21 @@ import Image from 'next/image'
 const Room1: NextPage = () => {
   return (
     <section>
-      <div className=" h-full w-full  fixed ">
+      {/* <div className=" h-full w-full  fixed ">
         <Image src="/pexels-satoshi-hirayama-22.jpg" layout="fill"
           objectFit="cover" objectPosition="top" blurDataURL="data:..." priority
-          placeholder="blur" />
+          placeholder="blur absolute" />
 
 
-      </div>
-      <div className="absolute min-h-screen h-full w-full"  >
+      </div> */}
+      <div className=" min-h-screen h-full w-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
         <Head>
           <title>Room 1</title>
           <link rel="icon" href="/favicon/favicon.ico" />
         </Head>
-        <BgOne />
+
         <Header />
+        <BgOne />
 
         <Footer />
       </div>

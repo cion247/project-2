@@ -4,15 +4,15 @@ import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header class="  bg-transparent text-white body-font text-shadow-xl ">
-            <div class="container mx-auto flex flex-wrap p-5 flex-column md:flex-row items-center fixed ">
+        <header class="text-white body-font text-shadow-xl ">
+            <div class="container  mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
                 <Link href="/"><a class="flex title-font font-medium items-center  mb-4 md:mb-0 " href="/">
 
                     <Image src="/earth.png" alt="..." width='50' height='40' objectFit='contain' class="ml-3 rounded align-center" />
 
 
-                    <span class="ml-3 text-xl">MY WORLD</span>
+                    <span class="ml-3 text-3xl">MY WORLD</span>
                 </a></Link>
 
                 <nav class="md:ml-auto  flex flex-wrap items-center justify-center  text-lg ">
