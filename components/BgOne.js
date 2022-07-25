@@ -185,7 +185,7 @@ const BgOne = () => {
 
                 {/* <Canvas ref={grRef} className="w-11/12 h-11/12 justify-center bg-white" /> */}
                 {/* <canvas className="w-11/12 h-11/12 justify-center "></canvas> */}
-                <canvas className="w-11/12 h-11/12 justify-center bg-white"></canvas>
+                <canvas className="w-4/5 h-11/12 mx-auto justify-center bg-white bg-opacity-40 backdrop-blur-md rounded-2xl drop-shadow-lg"></canvas>
 
 
 
