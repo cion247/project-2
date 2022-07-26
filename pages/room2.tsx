@@ -22,7 +22,7 @@ const Room2: NextPage = () => {
         </Head>
         <Header />
         
-        <BgTwo/>
+        <BgTwo />
         
         <Footer />
       </div>

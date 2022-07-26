@@ -20,8 +20,9 @@ const Room1: NextPage = () => {
           <title>Room 1</title>
           <link rel="icon" href="/favicon/favicon.ico" />
         </Head>
-        <BgOne />
+        
         <Header />
+        <BgOne />
 
         <Footer />
       </div>
