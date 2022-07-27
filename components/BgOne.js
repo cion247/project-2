@@ -5,81 +5,69 @@ const BgOne = () => {
     const [gravity, setGravity] = useState(0.2)
     const [friction, setFriction] = useState(0.98)
     const [balls, setBalls] = useState(150)
-    var colors = ['#62c0ff', '#41abf2', '#ffc7f7', '#939aff']
+    const colors = ['#62c0ff', '#41abf2', '#ffc7f7', '#939aff']
 
-    const decrementGravity = () => setGravity(prevGravity => prevGravity - 1)
-    const incrementGravity = () => setGravity(prevGravity => prevGravity + 1)
-    const decrementFriction = () => setFriction(prevFriction => prevFriction + 0.1)
-    const incrementFriction = () => setFriction(prevFriction => prevFriction - 0.1)
-    const decrementballs = () => setBalls(prevBalls => prevBalls - 50)
-    const incrementBalls = () => setBalls(prevBalls => prevBalls + 50)
-    const randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
-    const randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)]
+    const minusGravity = () => setGravity(prevGra => prevGra - 1)
+    const plusGravity = () => setGravity(prevGra => prevGra + 1)
+    const minusFriction = () => setFriction(prevFric => prevFric + 0.1)
+    const plusFriction = () => setFriction(prevFric => prevFric - 0.1)
+    const minusballs = () => setBalls(prevBalls => prevBalls - 50)
+    const plusBalls = () => setBalls(prevBalls => prevBalls + 50)
+    const ranIntGen = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+    const ranColor = (colors) => colors[Math.floor(Math.random() * colors.length)]
 
     useEffect(() => {
         console.log("use effect activated")
-
-        var canvas = document.querySelector('canvas')
-        var c = canvas.getContext('2d')
+        const canvas = document.querySelector('canvas')
+        const c = canvas.getContext('2d')
         canvas.width = innerWidth
         canvas.height = innerHeight
+        const array = []
+        addEventListener("click", () => start())
 
-        addEventListener("click", () => init())
 
-        function Ball(x, y, dx, dy, radius, color) {
-            this.x = x; this.y = y; this.dx = dx; this.dy = dy; this.radius = radius; this.color = color
-
-            this.update = () => {
-                if (this.y + this.radius + this.dy > canvas.height) {
-                    this.dy = -this.dy
-                    this.dy = this.dy * friction
-                    this.dx = this.dx * friction
-                } else {
-                    this.dy += gravity
-                }
-
-                if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
-                    this.dx = -this.dx * friction
-                }
-
-                this.x += this.dx
-                this.y += this.dy
-                this.draw()
-            }
-
-            this.draw = () => {
-                c.beginPath()
-                c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-                c.fillStyle = this.color
-                c.fill()
-                c.stroke()
-                c.closePath()
-            }
-        }
-        var ballArray = []
-        const init = () => {
-            ballArray = []
-
+        const start = () => {
+            array = []
             for (let i = 0; i < balls; i++) {
-                var radius = randomIntFromRange(10, 30)
-                var x = randomIntFromRange(radius, canvas.width - radius)
-                var y = randomIntFromRange(0, canvas.height - radius)
-                var dx = randomIntFromRange(-3, 3)
-                var dy = randomIntFromRange(-2, 2)
-                ballArray.push(new Ball(x, y, dx, dy, radius, randomColor(colors)))
+                const radius = ranIntGen(10, 30)
+                const x = ranIntGen(radius, canvas.width - radius)
+                const y = ranIntGen(0, canvas.height - radius)
+                const dx = ranIntGen(-3, 3)
+                const dy = ranIntGen(-2, 2)
+                array.push(new items(x, y, dx, dy, radius, ranColor(colors)))
             }
         }
-
-        const animate = () => {
-            requestAnimationFrame(animate);
+        const toRender = () => {
+            requestAnimationFrame(toRender);
             c.clearRect(0, 0, canvas.width, canvas.height)
-
-            for (let i = 0; i < ballArray.length; i++) {
-                ballArray[i].update()
+            for (let i = 0; i < array.length; i++) {
+                array[i].refresh()
             }
         }
-        init()
-        animate()
+
+        class items {
+            constructor(x, y, dx, dy, radius, color) {
+
+                const draw = () => {
+                    c.beginPath()
+                    c.arc(x, y, radius, 0, Math.PI * 2, false)
+                    c.fillStyle = color; c.fill(); c.stroke(); c.closePath()
+                }
+                this.refresh = () => {
+                    if (y + radius + dy > canvas.height) {
+
+                        dy = -dy * friction; dx = dx * friction
+                    } else {
+                        dy += gravity
+                    }
+                    if (x + radius >= canvas.width || x - radius <= 0) {
+                        dx = -dx * friction
+                    }
+                    x += dx; y += dy; draw()
+                }
+            }
+        }
+        start(); toRender()
     })
 
     return (
@@ -95,25 +83,25 @@ const BgOne = () => {
                     <p>GRAVITY</p>
                     <div className="flex flex-row mb-4  ">
 
-                        <button onClick={decrementGravity} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
-                        <span> {gravity} </span>
-                        <button onClick={incrementGravity} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
+                        <button onClick={minusGravity} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
+                        <span> {gravity.toFixed(2)} </span>
+                        <button onClick={plusGravity} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
                     <p>FRICTION</p>
                     <div className="flex flex-row mb-4 mt-1 ">
 
-                        <button onClick={decrementFriction} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
+                        <button onClick={minusFriction} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
                         <span> {friction.toFixed(2)} </span>
-                        <button onClick={incrementFriction} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
+                        <button onClick={plusFriction} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
                     <p>BALLS</p>
                     <div className="flex flex-row  mb-4 mt-1">
 
-                        <button onClick={decrementballs} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
+                        <button onClick={minusballs} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
                         <span> {balls} </span>
-                        <button onClick={incrementBalls} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
+                        <button onClick={plusBalls} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
                 </div>
