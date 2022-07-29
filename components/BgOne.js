@@ -3,17 +3,17 @@ import React, { useRef, useEffect, useState } from "react"
 const BgOne = () => {
 
     const canvasRef = useRef(null)
-    //const aThing = 1
+
     const [aThing, setThing] = useState(true)
     const [gravity, setGravity] = useState(1)
-    const [friction, setFriction] = useState(0.95)
+    const [friction, setFriction] = useState(1)
     const [balls, setBalls] = useState(100)
     const colors = ['#62c0ff', '#41abf2', '#ffc7f7', '#939aff']
 
     const minusGravity = () => setGravity(prevGra => prevGra - 1)
     const plusGravity = () => setGravity(prevGra => prevGra + 1)
-    const minusFriction = () => setFriction(prevFric => prevFric + 0.05)
-    const plusFriction = () => setFriction(prevFric => prevFric - 0.05)
+    const minusFriction = () => setFriction(prevFric => prevFric - 1)
+    const plusFriction = () => setFriction(prevFric => prevFric + 1)
     const minusballs = () => setBalls(prevBalls => prevBalls - 50)
     const plusBalls = () => setBalls(prevBalls => prevBalls + 50)
     const ranIntGen = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
@@ -32,7 +32,6 @@ const BgOne = () => {
 
         const start = () => {
 
-            //console.log(aThing++);
             array = []
             for (let i = 0; i < balls; i++) {
                 const radius = ranIntGen(10, 30)
@@ -62,12 +61,12 @@ const BgOne = () => {
                 this.refresh = () => {
                     if (y + radius + dy > canvas.height) {
 
-                        dy = -dy * friction; dx = dx * friction
+                        dy = -dy * (1 - friction * 0.05); dx = dx * (1 - friction * 0.05)
                     } else {
                         dy += gravity
                     }
                     if (x + radius >= canvas.width || x - radius <= 0) {
-                        dx = -dx * friction
+                        dx = -dx * (1 - friction * 0.05)
                     }
                     x += dx; y += dy; draw()
                 }
@@ -94,7 +93,7 @@ const BgOne = () => {
                     <div className="flex flex-row mb-4 mt-1 ">
 
                         <button onClick={minusGravity} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
-                        <span> {gravity.toFixed(2)} </span>
+                        <span> {gravity} </span>
                         <button onClick={plusGravity} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
@@ -102,7 +101,7 @@ const BgOne = () => {
                     <div className="flex flex-row mb-4 mt-1 ">
 
                         <button onClick={minusFriction} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
-                        <span> {friction.toFixed(2)} </span>
+                        <span> {friction} </span>
                         <button onClick={plusFriction} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
