@@ -8,7 +8,8 @@ const BgOne = () => {
     const [gravity, setGravity] = useState(1)
     const [friction, setFriction] = useState(1)
     const [balls, setBalls] = useState(100)
-    const colors = ['#62c0ff', '#41abf2', '#ffc7f7', '#939aff']
+    const colors = ['#92f95b', '#41abf2', '#ffc7f7', '#939aff']
+    //
 
     const minusGravity = () => setGravity(prevGra => prevGra - 1)
     const plusGravity = () => setGravity(prevGra => prevGra + 1)
@@ -34,10 +35,10 @@ const BgOne = () => {
 
             array = []
             for (let i = 0; i < balls; i++) {
-                const radius = ranIntGen(10, 30)
+                const radius = ranIntGen(30, 50)
                 const x = ranIntGen(radius, canvas.width - radius)
                 const y = ranIntGen(0, canvas.height - radius)
-                const dx = ranIntGen(-3, 3)
+                const dx = ranIntGen(-1, 1)
                 const dy = ranIntGen(-2, 2)
                 array.push(new items(x, y, dx, dy, radius, ranColor(colors)))
             }
