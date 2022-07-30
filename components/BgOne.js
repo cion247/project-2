@@ -6,7 +6,7 @@ const BgOne = () => {
 
     const [aThing, setThing] = useState(true)
     const [gravity, setGravity] = useState(1)
-    const [friction, setFriction] = useState(1)
+    const [mass, setFriction] = useState(1)
     const [balls, setBalls] = useState(100)
     const colors = ['#92f95b', '#41abf2', '#ffc7f7', '#939aff']
     //
@@ -62,12 +62,12 @@ const BgOne = () => {
                 this.refresh = () => {
                     if (y + radius + dy > canvas.height) {
 
-                        dy = -dy * (1 - friction * 0.05); dx = dx * (1 - friction * 0.05)
+                        dy = -dy * (1 - mass * 0.05); dx = dx * (1 - mass * 0.05)
                     } else {
                         dy += gravity
                     }
                     if (x + radius >= canvas.width || x - radius <= 0) {
-                        dx = -dx * (1 - friction * 0.05)
+                        dx = -dx * (1 - mass * 0.05)
                     }
                     x += dx; y += dy; draw()
                 }
@@ -80,7 +80,7 @@ const BgOne = () => {
         <section className="text-white mt-32 text-shadow-xl flex-col text-xl justify-center ">
             <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium" >GRAVITY SIMULATION:</h1>
-                <p className="mb-8 leading-relaxed text-2xl  ">This is a simple model of gravity simulation where we can better understand how gravity and friction effects circular objects </p>
+                <p className="mb-8 leading-relaxed text-2xl  ">This is a simple model of gravity simulation where we can better understand how gravity and mass effects circular objects </p>
             </div>
             <div className="container  mx-auto flex px-5 py-5 flex-row itmes-start">
 
@@ -98,11 +98,11 @@ const BgOne = () => {
                         <button onClick={plusGravity} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
-                    <p>FRICTION</p>
+                    <p>RIDIDITY</p>
                     <div className="flex flex-row mb-4 mt-1 ">
 
                         <button onClick={minusFriction} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
-                        <span> {friction} </span>
+                        <span> {mass} </span>
                         <button onClick={plusFriction} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>

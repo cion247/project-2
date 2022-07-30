@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Image from 'next/image'
+import BgTwo from '../components/BgTwo'
 
 const Room2: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Room2: NextPage = () => {
           <link rel="icon" href="/favicon/favicon.ico" />
         </Head>
         <Header />
+        <BgTwo />
 
         <Footer />
       </div>
