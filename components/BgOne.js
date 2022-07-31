@@ -77,10 +77,10 @@ const BgOne = () => {
     }, [aThing])
 
     return (
-        <section className="text-white mt-32 text-shadow-xl flex-col text-xl justify-center ">
+        <section className="text-white mt-10 text-shadow-xl flex-col text-xl justify-center ">
             <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium" >GRAVITY SIMULATION:</h1>
-                <p className="mb-8 leading-relaxed text-2xl  ">This is a simple model of gravity simulation where we can better understand how gravity and mass effects circular objects </p>
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >GRAVITY SIMULATION:</h1>
+                <p className="mb-8 leading-relaxed text-2xl px-5 ">This is a simple model of gravity simulation where we can better understand how gravity and mass effects circular objects In this model we can change the given Gravity and the mass of the objects to see diffrent results in the emulation</p>
             </div>
             <div className="container  mx-auto flex px-5 py-5 flex-row itmes-start">
 
@@ -98,7 +98,7 @@ const BgOne = () => {
                         <button onClick={plusGravity} className=" h-7 w-7 ml-1 bg-blue-500 hover:bg-blue-600 rounded">+</button>
 
                     </div>
-                    <p>RIDIDITY</p>
+                    <p>MASS</p>
                     <div className="flex flex-row mb-4 mt-1 ">
 
                         <button onClick={minusFriction} className=" h-7 w-7 mr-1 bg-blue-500 hover:bg-blue-600 rounded">-</button>
@@ -118,6 +118,53 @@ const BgOne = () => {
 
                 <canvas ref={canvasRef} className="w-4/5 h-11/12 mx-auto justify-center bg-white bg-opacity-40 backdrop-blur-md rounded-2xl drop-shadow-lg"></canvas>
 
+            </div>
+            <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
+                <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >Galileo's Leaning Tower of Pisa experiment</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the Italian scientist Galileo Galilei is said to have dropped two spheres of different masses from the Leaning Tower of Pisa to demonstrate that their time of descent was independent of their mass<br /><br /> We can conduct the same experiment using our gravity emulation, when we change the mass of the balls they become light bouncy, just like soccer balls, but when we increase the mass they become heavy like metal balls</p>
+                </div>
+                <div className=" p-1 w-2/6  xl:w-1/4 ">
+                    <img alt="cover" className=" object-contain object-center block" src="/0_1qYx21VpOO9lQHnR.jpg" />
+                </div>
+            </div>
+            <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
+                <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >How it's working:</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> first we will initialize the canvas element through refrece, other methods include using document.querySelector, document.getElementsByName and document.getElementById  methods we then initialize the context of the canvas to "2d" to work with a two dimentional workspace and finally we give our canvas a width and height,  the array initialization is to store all the objects genetared in the next function  </p>
+                </div>
+                <div className=" p-1 w-2/6  xl:w-2/4 justify-center  ">
+                    <img alt="cover" className=" object-contain justify-center  object-center block" src="/code1.png" />
+                </div>
+            </div>
+            <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
+                <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >start function:</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the start function is where we create all the ball objects using a for loop we initialize all the necessary variables using a random int generatior and generate a object using the items class, the objects are stored in the array and the length of the for loop determines the ammount of objects being rendered</p>
+                </div>
+                <div className=" p-1 w-1/3  xl:w-2/3 ">
+                    <img alt="cover" className=" object-contain object-center justify-center block" src="/code2.png" />
+                </div>
+            </div>
+            <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
+                <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >The item class:</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the item class takes in all the varialbes using a constructor and creates a object and sends it back into the for loop to store in the array, the .this() method is where the logic for the emulation lies, the x and y coordinates change based on dx and dy and are effected by mass and gravity  </p>
+                </div>
+                <div className=" p-1 w-1/3  xl:w-2/3 ">
+                    <img alt="cover" className=" object-contain object-center justify-center block" src="/code3.png" />
+                </div>
+            </div>
+            <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
+                <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >the  render funciton:</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the render function is finally use to create the aniamtion, the requestAnimationFrame method re-runs the function everytime the screen changes frames, the clearRect() method is use to clear the screen before every redraw then all the objects stored in the array are rendered throught the .refresh method
+                        the refresh method calls the update function from the items class and updates the position of the objects based of the logic in .refresh() and draws the objects with draw() function
+                        the whole render process repeats everytime the screen moves to the next frame</p>
+                </div>
+                <div className=" p-1 w-1/3  xl:w-2/3 ">
+                    <img alt="cover" className=" object-contain justify-center object-center block" src="/code4.png" />
+                </div>
             </div>
         </section >
     )

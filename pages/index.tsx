@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
       <div className="absolute min-h-screen h-full w-full  bg-fixed "  >
         <Head>
-          <title>My World</title>
+          <title>Learn Canvas</title>
           <link rel="icon" href="/favicon/favicon.ico" />
         </Head>
         <Header />
