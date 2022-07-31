@@ -46,7 +46,7 @@ const BackGround = () => {
                             3.Physics--modeling physical systems (falling bodies, pendulums, and projectiles), and implementing tweening for nonlinear motion and animation </span> <button onClick={toggle} className="mx-1 px-2 py-2 text-gray-400">{text}</button></p>
 
                     <div className="flex  mx-10">
-                        <a href="/Creativity, Inc. ( PDFDrive ).pdf" target="_blank" rel="noopener noreferrer"
+                        <a href="/Core HTML5 Canvas - Graphics, Animation, and Game Development.pdf" target="_blank" rel="noopener noreferrer"
                             className="py-1 px-5 bg-blue-500 rounded hover:bg-blue-600 hover:text-blue-200 text-lg">Download</a>
                     </div>
                 </div>
