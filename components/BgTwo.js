@@ -135,7 +135,7 @@ const BgTwo = () => {
         <section className="text-white mt-10 text-shadow-xl flex-col text-xl justify-center ">
             <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium" >Pong:</h1>
-                <p className="mb-8 leading-relaxed text-2xl  ">Pong was one of the first computer games created, it is a simple table tennis like game palyed with bars on a gravity less plane<br />click and drag on the left side of the board control your palyer </p>
+                <p className="mb-8 leading-relaxed text-2xl  ">Pong was one of the first computer games created, it is a simple table tennis like game played with bars on a gravity less plane<br />click and drag on the left side of the board control your player </p>
                 <div>
                     <p className="mt-10">RE-RENDER</p>
                     <button onClick={() => setThing(!aThing)} className=" h-7 w-14 mr-1 bg-blue-500 hover:bg-blue-600 rounded mb-3 mt-1">start</button>
@@ -154,8 +154,8 @@ const BgTwo = () => {
             </div>
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >How Its Woring:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the initializations are not very diffrent, now we just set the score to 0 before every game we start and give new spawn coordinates to the bot and the palyer par</p>
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >How Its Working:</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the initializations are not very different, now we just set the score to 0 before every game we start and give new spawn coordinates to the bot and the player bar</p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain object-center justify-center block" src="/code4.1.png" />
@@ -164,7 +164,7 @@ const BgTwo = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >the start and render functions:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the start and render functions do the same task of creating each object (the ball, the botBar the playerBar) seperately the render funciton again, clears and animates all the motion shown in the canvas (Start and render functions are explained in more detail in the room one) </p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the start and render functions do the same task of creating each object (the ball, the botBar the playerBar) separately the render function again, clears and animates all the motion shown in the canvas (Start and render functions are explained in more detail in the room one) </p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain object-center justify-center block" src="/code4.2.png" />
@@ -173,7 +173,7 @@ const BgTwo = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >the Items class:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the item class initilaizes the ball object, the main logic in the .refresh method is determines the behaviour of the ball and how it acts based on the players and the wall, the logic compares the Y-coordinae of each elment when they are close to determine if the ball should bounse back or slip thourgh, the spped of the ball(dx) gradually increases as the game goes on. The  setScore function at the bottom count the score of the players<br />it then calls the function of each player-bar to update their position  </p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the item class initializes the ball object, the main logic in the .refresh method is determines the behaviour of the ball and how it acts based on the players and the wall, the logic compares the Y-coordinate of each element when they are close to determine if the ball should bounce back or slip through, the speed of the ball(dx) gradually increases as the game goes on. The  setScore function at the bottom count the score of the players<br />it then calls the function of each player-bar to update their position  </p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain object-center justify-center block" src="/code5.png" />
@@ -182,7 +182,7 @@ const BgTwo = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >Bot Player:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the bot is a class named AiBar the bar behaves based on the positin of the ball and adjusts it's y-coordinate to be closest to the ball's center-Y-coordinate, the AiBar's speed is almost the same as the ball in the beginig but doesn't speed up like the ball  </p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the bot is a class named AiBar the bar behaves based on the position of the ball and adjusts it's y-coordinate to be closest to the ball's centre-Y-coordinate, the AiBar's speed is almost the same as the ball in the beginnig but doesn't speed up like the ball  </p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain object-center justify-center block" src="/code6.png" />
@@ -191,7 +191,7 @@ const BgTwo = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >Player one:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the User can control the Player1 object the position is updated based on the Y coordinate received in the items class call (p1Y) which gets updated using eventListeners which sets the p1Y value based on the Y-coordinate of the computer-Mouse )</p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the User can control the Player1 object the position is updated based on the Y coordinate received in the items class call (p1Y) which gets updated using eventListeners which sets the p1Y value based on the Y-coordinate of the computer-mouse )</p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain justify-center object-center block" src="/code7.png" />

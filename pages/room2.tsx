@@ -8,7 +8,7 @@ import BgTwo from '../components/BgTwo'
 const Room2: NextPage = () => {
   return (
     <section>
-      <div className=" h-full w-full  fixed ">
+      <div className=" h-full w-full bg-gradient-to-tl from-violet-900 via-emerald-900 to-cyan-900 fixed ">
         <Image src="/pexels-riccardo-bertolo-4245826-2.jpg" layout="fill"
           objectFit="cover" objectPosition="top" blurDataURL="data:..." priority
           placeholder="blur" />

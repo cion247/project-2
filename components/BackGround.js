@@ -16,10 +16,10 @@ const BackGround = () => {
     return (
         <section className="text-white text-shadow-xl body-font justify-center ">
             <div className="container mx-auto pt-10 flex px-5 pb-12  justify-center ">
-                <div className="text-center  w-1/2 md:w-3/4 xl:w-full">
+                <div className="container mx-auto text-center  w-1/2 md:w-3/4 xl:w-full">
                     <h1 className="title-font text-2xl md:text-4xl 2xl:text-5xl mb-4 font-bold ">WELCOME TO LEARN CANVAS</h1>
                     <p className="mb-8 leading-relaxed text-2xl ">A simple interactive to website to learn about HTML canvas  <br />check out the rooms available to explore to see some projects made using HTML Canvas5.<br /><br />Canvas is an HTML element used to draw graphics and animation through JavaScript.
-                        Canvas is a container for the graphics. We use JavaScript to draw the graphics and program their brhaviour based on functions.Canvas has several methods for drawing paths, boxes, circles, text, and adding images, these methods make it easy to use Canvas </p>
+                        Canvas is a container for the graphics. We use JavaScript to draw the graphics and program their behaviour based on functions. Canvas has several methods for drawing paths, boxes, circles, text, and adding images, these methods make it easy to use Canvas </p>
                 </div>
             </div>
 
@@ -42,8 +42,8 @@ const BackGround = () => {
                             3.Text--drawing, positioning, setting font properties; building text controls<br />
                             4.Images--drawing, scaling, clipping, processing, and animating<br />
                             5.Animations--creating smooth, efficient, and portable animations
-                            Sprites--implementing animated objects that have painters and behaviors<br />
-                            3.Physics--modeling physical systems (falling bodies, pendulums, and projectiles), and implementing tweening for nonlinear motion and animation </span> <button onClick={toggle} className="mx-1 px-2 py-2 text-gray-400">{text}</button></p>
+                            Sprites--implementing animated objects that have painters and behaviours<br />
+                            6.Physics--modelling physical systems (falling bodies, pendulums, and projectiles), and implementing tweening for nonlinear motion and animation </span> <button onClick={toggle} className="mx-1 px-2 py-2 text-gray-400">{text}</button></p>
 
                     <div className="flex  mx-10">
                         <a href="/Core HTML5 Canvas - Graphics, Animation, and Game Development.pdf" target="_blank" rel="noopener noreferrer"

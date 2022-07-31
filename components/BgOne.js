@@ -80,7 +80,7 @@ const BgOne = () => {
         <section className="text-white mt-10 text-shadow-xl flex-col text-xl justify-center ">
             <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >GRAVITY SIMULATION:</h1>
-                <p className="mb-8 leading-relaxed text-2xl px-5 ">This is a simple model of gravity simulation where we can better understand how gravity and mass effects circular objects In this model we can change the given Gravity and the mass of the objects to see diffrent results in the emulation</p>
+                <p className="mb-8 leading-relaxed text-2xl px-5 ">This is a simple model of gravity simulation where we can better understand how gravity and mass effects circular objects in this model we can change the given Gravity and the mass of the objects to see different results in the emulation</p>
             </div>
             <div className="container  mx-auto flex px-5 py-5 flex-row itmes-start">
 
@@ -131,7 +131,7 @@ const BgOne = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >How it's working:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> first we will initialize the canvas element through refrece, other methods include using document.querySelector, document.getElementsByName and document.getElementById  methods we then initialize the context of the canvas to "2d" to work with a two dimentional workspace and finally we give our canvas a width and height,  the array initialization is to store all the objects genetared in the next function  </p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> first we will initialize the canvas element through referece, other methods include using document.querySelector, document.getElementsByName and document.getElementById  methods we then initialize the context of the canvas to "2d" to work with a two dimensional workspace and finally we give our canvas a width and height,  the array initialization is to store all the objects generated in the next function  </p>
                 </div>
                 <div className=" p-1 w-2/6  xl:w-2/4 justify-center  ">
                     <img alt="cover" className=" object-contain justify-center  object-center block" src="/code1.png" />
@@ -140,7 +140,7 @@ const BgOne = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >start function:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the start function is where we create all the ball objects using a for loop we initialize all the necessary variables using a random int generatior and generate a object using the items class, the objects are stored in the array and the length of the for loop determines the ammount of objects being rendered</p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the start function is where we create all the ball objects using a for loop we initialize all the necessary variables using a random int generator and generate a object using the items class, the objects are stored in the array and the length of the for loop determines the amount of objects being rendered</p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain object-center justify-center block" src="/code2.png" />
@@ -149,7 +149,7 @@ const BgOne = () => {
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >The item class:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the item class takes in all the varialbes using a constructor and creates a object and sends it back into the for loop to store in the array, the .this() method is where the logic for the emulation lies, the x and y coordinates change based on dx and dy and are effected by mass and gravity  </p>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the item class takes in all the variables using a constructor and creates a object and sends it back into the for loop to store in the array, the .this() method is where the logic for the emulation lies, the x and y coordinates change based on dx and dy and are effected by mass and gravity  </p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain object-center justify-center block" src="/code3.png" />
@@ -157,10 +157,10 @@ const BgOne = () => {
             </div>
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center min-h-min blg:flex-grow">
                 <div className=" container mx-auto flex flex-col  items-start text-start md:pr-16 md:w-3/4 xl:w-full  lg:flex-grow ">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >the  render funciton:</h1>
-                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the render function is finally use to create the aniamtion, the requestAnimationFrame method re-runs the function everytime the screen changes frames, the clearRect() method is use to clear the screen before every redraw then all the objects stored in the array are rendered throught the .refresh method
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 px-5 font-medium" >the  render function:</h1>
+                    <p className="mb-8 leading-relaxed text-2xl px-5 "> the render function is finally use to create the animation, the requestAnimationFrame method re-runs the function every time the screen changes frames, the clearRect() method is use to clear the screen before every redraw then all the objects stored in the array are rendered through the .refresh method
                         the refresh method calls the update function from the items class and updates the position of the objects based of the logic in .refresh() and draws the objects with draw() function
-                        the whole render process repeats everytime the screen moves to the next frame</p>
+                        the whole render process repeats every time the screen moves to the next frame</p>
                 </div>
                 <div className=" p-1 w-1/3  xl:w-2/3 ">
                     <img alt="cover" className=" object-contain justify-center object-center block" src="/code4.png" />

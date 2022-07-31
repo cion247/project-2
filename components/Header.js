@@ -17,11 +17,11 @@ const Header = () => {
 
                 <nav className="md:ml-auto  flex flex-wrap items-center justify-center  text-lg ">
 
-                    <Link href="/room1"><a target="_blank" rel="noopener noreferrer" className=" mx-3 px-6 my-1 py-5 bg-green-500 rounded 
+                    <Link href="/room1"><a className=" mx-3 px-6 my-1 py-5 bg-green-500 rounded 
                         hover:bg-green-700 ">Room 1
                     </a></Link>
 
-                    <Link href="/room2"><a target="_blank" rel="noopener noreferrer" className=" mx-3 px-6 my-1 py-5 bg-green-500 rounded 
+                    <Link href="/room2"><a className=" mx-3 px-6 my-1 py-5 bg-green-500 rounded 
                         hover:bg-green-700 ">Room 2
                     </a></Link>
 
